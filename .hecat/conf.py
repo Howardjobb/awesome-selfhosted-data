@@ -16,6 +16,10 @@ html_use_opensearch = 'https://awesome-selfhosted.net/'
 html_favicon = '../_static/favicon.ico'
 html_logo = '../_static/logo.svg'
 html_css_files = ['custom.css']
+html_js_files = [
+    'speed-insights.js',
+    ('/_vercel/speed-insights/script.js', {'defer': 'defer'}),
+]
 extensions = ['myst_parser', 'sphinx_design']
 source_suffix = ['.md']
 templates_path = ['_templates']
